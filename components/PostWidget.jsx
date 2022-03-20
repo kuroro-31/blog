@@ -20,6 +20,9 @@ function PostWidget({ categories, slug }) {
     }
   }, [slug]);
 
+  // -------------------*
+  // NOTE: 最近の投稿
+  // -------------------*
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">{slug ? 'Related Posts' : 'Recent Posts'}</h3>
@@ -32,7 +35,7 @@ function PostWidget({ categories, slug }) {
               height="60px"
               width="60px"
               unoptimized
-              className="align-middle rounded-full"
+              className="align-middle rounded-full object-cover"
               src={post.featuredImage.url}
             />
           </div>

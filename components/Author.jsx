@@ -1,9 +1,12 @@
+// -------------------**
+// NOTE: 投稿者について
+// -------------------**
 import Image from 'next/image';
 import { grpahCMSImageLoader } from '../util';
 
 function Author({ author }) {
   return (
-    <div className="text-center mt-20 mb-8 p-12 relative rounded-lg bg-black bg-opacity-20">
+    <div className="bg-primary text-center mt-20 mb-8 p-12 relative rounded-lg">
       <div className="absolute left-0 right-0 -top-14">
         <Image
           unoptimized
@@ -11,7 +14,7 @@ function Author({ author }) {
           alt={author.name}
           height="100px"
           width="100px"
-          className="align-middle rounded-full"
+          className="align-middle rounded-full object-cover"
           src={author.photo.url}
         />
       </div>

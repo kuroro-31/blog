@@ -16,7 +16,7 @@ function FeaturedPostCard({ post }) {
             alt={post.author.name}
             height="30px"
             width="30px"
-            className="align-middle drop-shadow-lg rounded-full"
+            className="align-middle drop-shadow-lg rounded-full object-cover"
             src={post.author.photo.url}
           />
           <p className="inline align-middle text-white text-shadow ml-2 font-medium">{post.author.name}</p>
