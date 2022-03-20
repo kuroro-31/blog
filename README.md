@@ -1,4 +1,6 @@
-# 技術スタック
+## 概要
+- 技術ブログ
+## スタック
 - Next.js: latest
 - React: 17.0.2
 - Tipescript: 4.5.4
