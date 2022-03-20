@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { getCategories } from '../services';
 
 function Header() {
+  // eslint-disable-next-line no-unused-vars
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
