@@ -13,6 +13,8 @@ function FeaturedPostCard({ post }) {
         <div className="flex items-center absolute bottom-5 w-full justify-center">
           <Image
             unoptimized
+            width="30px"
+            height="30px"
             alt={post.author.name}
             className="profile-img align-middle"
             src={post.author.photo.url}

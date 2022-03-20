@@ -29,6 +29,8 @@ function PostCard({ post }) {
             unoptimized
             loader={grpahCMSImageLoader}
             alt={post.author.name}
+            width="30px"
+            height="30px"
             className="profile-img align-middle"
             src={post.author.photo.url}
           />
