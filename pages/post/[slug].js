@@ -11,10 +11,12 @@ function PostDetails({ post }) {
   }
 
   return (
-    <div className="post-slug container mx-auto px-6 mb-8">
+    <div className="container mx-auto px-6 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-8">
-          <PostDetail post={post} />
+          <div className="post-slug">
+            <PostDetail post={post} />
+          </div>
           <Author author={post.author} />
           <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
           <CommentsForm slug={post.slug} />
