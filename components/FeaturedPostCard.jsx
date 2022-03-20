@@ -14,9 +14,7 @@ function FeaturedPostCard({ post }) {
           <Image
             unoptimized
             alt={post.author.name}
-            height="30px"
-            width="30px"
-            className="align-middle drop-shadow-lg rounded-full object-cover"
+            className="profile-img align-middle"
             src={post.author.photo.url}
           />
           <p className="inline align-middle text-white text-shadow ml-2 font-medium">{post.author.name}</p>

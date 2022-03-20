@@ -65,6 +65,14 @@ a {
   font-family: 'Julius Sans One', sans-serif;
 }
 
+.profile-img {
+  @apply object-cover drop-shadow-lg rounded-full;
+  min-height: 30px;
+  max-height: 30px;
+  min-width: 30px;
+  max-width: 30px;
+}
+
 .post-slug {
   h1 {
     font-size: 36px;
@@ -98,7 +106,7 @@ a {
   }
   p {
     @apply text-lg;
-    line-height: 2;
+    line-height: 1.5;
     word-wrap: break-word;
     letter-spacing: .01rem;
   }
