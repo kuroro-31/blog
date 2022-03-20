@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { getRecentPosts, getSimilarPosts } from '../services';
 import { grpahCMSImageLoader } from '../util';
 
-const PostWidget = ({ categories, slug }) => {
+function PostWidget({ categories, slug }) {
   const [relatedPosts, setRelatedPosts] = useState([]);
 
   useEffect(() => {
@@ -44,6 +44,6 @@ const PostWidget = ({ categories, slug }) => {
       ))}
     </div>
   );
-};
+}
 
 export default PostWidget;

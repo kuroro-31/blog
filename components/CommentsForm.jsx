@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { submitComment } from '../services';
 
-const CommentsForm = ({ slug }) => {
+function CommentsForm({ slug }) {
   const [error, setError] = useState(false);
   const [localStorage, setLocalStorage] = useState(null);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -97,6 +97,6 @@ const CommentsForm = ({ slug }) => {
       </div>
     </div>
   );
-};
+}
 
 export default CommentsForm;

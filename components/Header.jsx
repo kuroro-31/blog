@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { getCategories } from '../services';
 
-const Header = () => {
+function Header() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -28,6 +27,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Header;

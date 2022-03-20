@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-
+import { useEffect, useState } from 'react';
 import { getCategories } from '../services';
 
-const Categories = () => {
+function Categories() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -22,6 +21,6 @@ const Categories = () => {
       ))}
     </div>
   );
-};
+}
 
 export default Categories;

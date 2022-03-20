@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import moment from 'moment';
 import parse from 'html-react-parser';
-
+import moment from 'moment';
+import { useEffect, useState } from 'react';
 import { getComments } from '../services';
 
-const Comments = ({ slug }) => {
+function Comments({ slug }) {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
@@ -14,6 +13,7 @@ const Comments = ({ slug }) => {
   }, []);
 
   return (
+    // eslint-disable-next-line react/jsx-no-useless-fragment
     <>
       {comments.length > 0 && (
         <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
@@ -38,6 +38,6 @@ const Comments = ({ slug }) => {
       )}
     </>
   );
-};
+}
 
 export default Comments;
