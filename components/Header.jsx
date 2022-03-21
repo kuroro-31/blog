@@ -17,7 +17,7 @@ function Header() {
       <div className="w-full inline-block py-6">
         <div className="px-6 md:px-10">
           <Link href="/">
-            <span className="title cursor-pointer font-bold text-2xl">Frontend Diary</span>
+            <span className="title cursor-pointer text-2xl">Frontend Diary</span>
           </Link>
         </div>
       </div>
