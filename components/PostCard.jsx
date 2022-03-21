@@ -20,7 +20,7 @@ function PostCard({ post }) {
         <img src={post.featuredImage.url} alt="" className="object-top absolute h-80 w-full object-cover shadow" />
       </div>
 
-      <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold">
+      <h1 className="transition text-center mb-8 cursor-pointer hover:text-blue-600 text-3xl font-semibold">
         <Link href={`/post/${post.slug}`}>{post.title}</Link>
       </h1>
       <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
@@ -48,7 +48,7 @@ function PostCard({ post }) {
       </p>
       <div className="text-center">
         <Link href={`/post/${post.slug}`}>
-          <span className="bg-primary transition duration-300 ease transform hover:-translate-y-1 inline-block text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>
+          <span className="bg-primary transition ease transform hover:-translate-y-1 inline-block text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>
         </Link>
       </div>
     </div>
