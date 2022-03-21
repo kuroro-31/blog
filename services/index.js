@@ -73,7 +73,7 @@ export const getPostDetails = async (slug) => {
         createdAt
         slug
         content {
-          raw
+          html
         }
         categories {
           name
@@ -144,6 +144,7 @@ export const getAdjacentPosts = async (createdAt, slug) => {
   return { next: result.next[0], previous: result.previous[0] };
 };
 
+// 記事のカテゴリー取得
 export const getCategoryPost = async (slug) => {
   const query = gql`
     query GetCategoryPost($slug: String!) {
@@ -181,6 +182,7 @@ export const getCategoryPost = async (slug) => {
   return result.postsConnection.edges;
 };
 
+// 注目の記事取得
 export const getFeaturedPosts = async () => {
   const query = gql`
     query GetCategoryPost() {
@@ -206,6 +208,7 @@ export const getFeaturedPosts = async () => {
   return result.posts;
 };
 
+// コメント送信
 export const submitComment = async (obj) => {
   const result = await fetch('/api/comments', {
     method: 'POST',
@@ -218,6 +221,7 @@ export const submitComment = async (obj) => {
   return result.json();
 };
 
+// コメント取得
 export const getComments = async (slug) => {
   const query = gql`
     query GetComments($slug:String!) {
@@ -234,6 +238,7 @@ export const getComments = async (slug) => {
   return result.comments;
 };
 
+// 記事取得
 export const getRecentPosts = async () => {
   const query = gql`
     query GetPostDetails() {
