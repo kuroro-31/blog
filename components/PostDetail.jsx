@@ -27,7 +27,9 @@ function PostDetail({ post }) {
           </div>
         </div>
         <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.content.html }} />
+        <div className="w-full flex flex-col flex-wrap">
+          <div className="w-full post-slug-body" dangerouslySetInnerHTML={{ __html: post.content.html }} />
+        </div>
       </div>
     </div>
   );
